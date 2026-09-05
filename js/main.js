@@ -39,16 +39,6 @@
     });
   });
 
-  // Contact form: no backend yet — guide the user to email/phone.
-  var form = document.getElementById("contact-form");
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var note = document.getElementById("form-note");
-      if (note) note.hidden = false;
-    });
-  }
-
   // Mark current page in nav
   var path = location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll(".nav-links a[href]").forEach(function (a) {

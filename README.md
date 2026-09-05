@@ -1,6 +1,6 @@
 # Wayfinder Therapeutic — Website
 
-A warm, welcoming, and inclusive marketing website for **Cliff Stornel, MA** and his
+A warm, welcoming, and inclusive marketing website for **Cliff Stornel, MACP** and his
 practice, **Wayfinder Therapeutic**. Built as a lightweight static site (plain
 HTML, CSS, and a little JavaScript) — no build step, hosts anywhere.
 
@@ -12,7 +12,7 @@ HTML, CSS, and a little JavaScript) — no build step, hosts anywhere.
 | `about.html` | About — Cliff's bio, philosophy, education & credentials |
 | `services.html` | Services — individual / couples / group therapy, modalities, formats, fees |
 | `faq.html` | FAQ — expandable common questions |
-| `contact.html` | Contact — Jane booking button, contact details, message form |
+| `contact.html` | Contact — Jane booking button, email, Instagram, and availability details |
 
 Shared assets: `css/styles.css`, `js/main.js`.
 
@@ -24,32 +24,12 @@ replace each one.
 
 | Placeholder | Where | Replace with |
 |-------------|-------|--------------|
-| `[PHONE]` | footer (all pages), contact | Your phone / text number |
-| `tel:+10000000000` | footer (all pages), contact | Same number in `+1XXXXXXXXXX` format |
 | `wayfinder@wayfindertherapeutic.com` | footer (all pages), contact | Service email address |
-| `[JANE_BOOKING_URL]` | `contact.html` "Schedule on Jane" button | Your Jane URL, e.g. `https://wayfinder.janeapp.com` |
-| `[office address]` / `[Office address & details]` | contact, services | Winnipeg office address (or remove if telehealth-only) |
-| `[$ rate]` | `services.html` fees | Your session rates |
-| `[e.g. Mon–Thu, 10am–6pm]` | contact | Your hours |
-| `[ PHOTO OF CLIFF ]` | `about.html` | A real photo (see below) |
-| `[Add a warm, personal paragraph…]` | `about.html` | A few personal sentences in Cliff's voice |
-| `[Add regulatory body & registration #]` | `about.html` | Registration/licensing details |
-| Other `[…]` notes | various | Small confirmations (insurance coverage, modality list, etc.) |
+| Confidentiality details | `faq.html` | Confirm the legal and ethical wording for the applicable jurisdiction |
+| Therapy modalities | `services.html` | Confirm that the listed approaches match Cliff&rsquo;s actual practice |
 
-### Adding real photos
-The hero, about portrait, and section images currently use tasteful SVG
-placeholders. To use real photography, drop images into an `images/` folder and
-replace the relevant `<svg …>…</svg>` block (or `.hero-art` / `.split-art` div)
-with an `<img src="images/your-photo.jpg" alt="…">`. Warm, natural, welcoming
-photos work best — think the reference sites (Orion Wellness, Evergreen).
-
-### Connecting the contact form
-The form on `contact.html` currently shows a friendly "email me instead" note on
-submit. To make it actually send, point it at a form service — all work with
-static hosting:
-- **Formspree** — set `<form action="https://formspree.io/f/XXXX" method="POST">`
-- **Netlify Forms** — add `netlify` to the `<form>` tag (if hosted on Netlify)
-- Or simply delete the form and keep the email/phone/Jane options.
+### Contact
+The contact page directs visitors to email Wayfinder Therapeutic or schedule through Jane.
 
 ## Running locally
 It's static — just open `index.html` in a browser. Or serve it:
